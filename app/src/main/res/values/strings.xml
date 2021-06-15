@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">FormApp</string>
+    <string name="nombre_completo">Nombre completo</string>
+    <string name="telefono">Teléfono</string>
+    <string name="email">Email</string>
+    <string name="descripcion_contacto">Descripción contacto</string>
+    <string name="siguiente">Siguiente</string>
 </resources>
