@@ -11,63 +11,70 @@
         android:layout_height="match_parent"
         tools:context=".ConfirmActivity">
 
-        <EditText
-            android:id="@+id/edittext_name"
-            android:hint="@string/nombre_completo"
+        <TextView
+            android:id="@+id/textview_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="@string/confirmar_datos"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <DatePicker
-            android:layout_marginTop="@dimen/margin_top"
-            android:id="@+id/datepicker_birth_date"
+        <TextView
+            android:id="@+id/textview_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/margin_top"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_title" />
+
+        <TextView
+            android:id="@+id/textview_date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_top"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/edittext_name" />
+            app:layout_constraintTop_toBottomOf="@+id/textview_name" />
 
-        <EditText
-            android:hint="@string/telefono"
-            android:layout_marginTop="@dimen/margin_top"
-            android:inputType="phone"
-            android:id="@+id/edittext_phone"
+        <TextView
+            android:id="@+id/textview_phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/datepicker_birth_date" />
-
-        <EditText
-            android:hint="@string/email"
             android:layout_marginTop="@dimen/margin_top"
-            android:id="@+id/edittext_email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/edittext_phone" />
+            app:layout_constraintTop_toBottomOf="@+id/textview_date" />
 
-        <EditText
-            android:hint="@string/descripcion_contacto"
-            android:layout_marginTop="@dimen/margin_top"
-            android:id="@+id/edittext_description"
+        <TextView
+            android:id="@+id/textview_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text"
+            android:layout_marginTop="@dimen/margin_top"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/edittext_email" />
+            app:layout_constraintTop_toBottomOf="@+id/textview_phone" />
+
+        <TextView
+            android:id="@+id/textview_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_email" />
 
         <Button
-            android:id="@+id/button_next"
-            android:layout_marginTop="@dimen/margin_top"
-            android:layout_width="match_parent"
+            android:id="@+id/button_edit"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/siguiente"
-            app:layout_constraintTop_toBottomOf="parent" />
+            android:text="@string/editar_datos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_description" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

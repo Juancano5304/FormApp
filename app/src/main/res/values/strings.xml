@@ -5,4 +5,6 @@
     <string name="email">Email</string>
     <string name="descripcion_contacto">Descripción contacto</string>
     <string name="siguiente">Siguiente</string>
+    <string name="confirmar_datos">Confirmar Datos</string>
+    <string name="editar_datos">Editar datos</string>
 </resources>
